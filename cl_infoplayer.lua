@@ -42,7 +42,7 @@ for i, v in ipairs( player.GetAll() ) do
     print("Grade: " .. v:GetUserGroup() .. "\n")
 	end
 
-	if v:getDarkRPVar("money") != nil then
+	if DarkRP and v:getDarkRPVar("money") != nil then
     print("[DARKRP] Money: " .. v:getDarkRPVar("money") .. "\n")
 	end
 
@@ -50,7 +50,7 @@ end
 
 	print("********* [DEBUG] *********\n")
 
-	if LocalPlayer():getDarkRPVar("money") != nil then
+	if DarkRP and LocalPlayer():getDarkRPVar("money") != nil then
 	print("DARKRP: TRUE")
 	else
 	print("DARKRP: FALSE")
